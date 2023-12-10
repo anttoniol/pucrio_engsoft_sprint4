@@ -4,8 +4,8 @@ import flask
 from flask_openapi3 import Info, Tag
 from flask_openapi3 import OpenAPI
 
-from predictor.base_models.predictor_body import PredictorBody
-from predictor.predictor_service import PredictorService
+from back.predictor.base_models.predictor_body import PredictorBody
+from back.predictor.predictor_service import PredictorService
 
 info = Info(title = "Predictor API", version = "1.0.0")
 app = OpenAPI(__name__, info = info)
@@ -30,14 +30,21 @@ def create_response(body, status_code):
 
 @app.post("/predictor/", summary = "Obtain a prediction", tags = [predictor_tag])
 def save_book(body: PredictorBody):
-    result = predictor_service.predict(body.dict())
-    success = result[1]
+    try:
+        prediction = predictor_service.predict(body.model_dump())
 
-    if success:
-        body = {"mensagem": "Predição realizada com sucesso!"}
+        body = {
+            "mensagem": "Predição realizada com sucesso!",
+            "predicao": prediction
+        }
         return create_response(body, 200)
-    body = {"mensagem": "Erro ao salvar livro!"}
-    return create_response(body, 500)
+    except Exception as ex:
+        body = {
+            "mensagem": "Erro realizar predição!",
+            "predicao": None
+        }
+        print(ex.__str__())
+        return create_response(body, 500)
 
 
 if __name__ == '__main__':
