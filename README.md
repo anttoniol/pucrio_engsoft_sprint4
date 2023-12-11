@@ -3,7 +3,10 @@
 ## Sprint 4
 
 ### Vídeo da apresentação
-https://vimeo.com/893284730?share=copy
+https://vimeo.com/893519068?share=copy
+
+### Notebook Colab
+https://colab.research.google.com/github/anttoniol/pucrio_engsoft_sprint4/blob/main/relatorio_engsoft_sprint4.ipynb
 
 ### Instruções de uso
 
