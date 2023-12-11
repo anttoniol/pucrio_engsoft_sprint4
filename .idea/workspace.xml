@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2ff399-a2d1-4282-8009-abb136d2b9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/back/evaluator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/metric_comparator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/seade_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/test/model_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/test/model_test_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/test/seade_model_test_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/predictor/predictor_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/predictor/predictor_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/predictor/predictor_model_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/predictor/predictor_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/predictor/predictor_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/predictor_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/predictor_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/predictor_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/predictor_routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relatorio_engsoft_sprint4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/relatorio_engsoft_sprint4.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
