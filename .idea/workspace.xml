@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2ff399-a2d1-4282-8009-abb136d2b9e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/metric_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/metric_comparator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/test/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/test/model_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +35,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.predictor_controller (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.predictor_controller.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/somebody/projects/pucrio/pucrio_engsoft_sprint4/back&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test.executor": "Run",
+    "Python.predictor_controller (1).executor": "Run",
+    "Python.predictor_controller.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/somebody/projects/pucrio/pucrio_engsoft_sprint4/back",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/back" />
@@ -60,7 +61,7 @@
       <recent name="$PROJECT_DIR$/predictor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.predictor_controller">
+  <component name="RunManager" selected="Python tests.Python tests in test">
     <configuration name="predictor_controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pucrio_engsoft_sprint4" />
       <option name="ENV_FILES" value="" />
@@ -100,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.predictor_controller" />
         <item itemvalue="Python tests.Python tests in test" />
+        <item itemvalue="Python.predictor_controller" />
         <item itemvalue="Python.predictor_controller" />
       </list>
     </recent_temporary>
@@ -131,6 +132,10 @@
           <url>file://$PROJECT_DIR$/back/predictor/predictor_controller.py</url>
           <line>24</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back/test/seade_model_test_data.py</url>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
