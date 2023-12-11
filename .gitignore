@@ -162,3 +162,5 @@ cython_debug/
 *.zip
 
 front/node_modules
+
+*.mkv
