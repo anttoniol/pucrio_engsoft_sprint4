@@ -15,7 +15,7 @@ const prediction_meanings = {
 function check_form_values(values) {
   for (var key in values) {
     if (values[key] == null || values[key] === "select") {
-      alert("Nenhum campo devem ser informados!");
+      alert("Todos os campos devem ser informados!");
       return false;
     }
   }

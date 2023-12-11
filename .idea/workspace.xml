@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2ff399-a2d1-4282-8009-abb136d2b9e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/evaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/metric_comparator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/seade_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/test/model_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/test/model_test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/test/seade_model_test_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/predictor/base_models/predictor_body.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/predictor/base_models/predictor_body.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/predictor/predictor_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/predictor/predictor_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificador.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/classificador.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/predictor/predictor_model_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/predictor/predictor_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/predictor/predictor_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/predictor_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/predictor_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/predictor_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/predictor_routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relatorio_engsoft_sprint4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/relatorio_engsoft_sprint4.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,22 +53,31 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test.executor&quot;: &quot;Run&quot;,
     &quot;Python.predictor_controller (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.predictor_controller.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/somebody/projects/pucrio/pucrio_engsoft_sprint4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/somebody/projects/pucrio/pucrio_engsoft_sprint4/back&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back" />
+      <recent name="$PROJECT_DIR$/back/test" />
+      <recent name="$PROJECT_DIR$/back/predictor/base_models" />
+      <recent name="$PROJECT_DIR$/back/predictor" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back/test" />
+      <recent name="$PROJECT_DIR$/back" />
+      <recent name="$PROJECT_DIR$/back/" />
       <recent name="$PROJECT_DIR$/back/predictor/base_models" />
       <recent name="$PROJECT_DIR$/predictor" />
-      <recent name="$PROJECT_DIR$/csvs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.predictor_controller">
     <configuration name="predictor_controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pucrio_engsoft_sprint4" />
       <option name="ENV_FILES" value="" />
@@ -92,9 +100,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pucrio_engsoft_sprint4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/back/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/back/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.predictor_controller" />
+        <item itemvalue="Python tests.Python tests in test" />
         <item itemvalue="Python.predictor_controller" />
       </list>
     </recent_temporary>
@@ -122,13 +146,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/back/predictor/predictor_controller.py</url>
-          <line>30</line>
+          <line>24</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/back/predictor/predictor_model_loader.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

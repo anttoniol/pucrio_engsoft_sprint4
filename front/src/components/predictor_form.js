@@ -8,7 +8,13 @@ import make_prediction from "../routes/predictor_routes";
 
 export const PredictorForm = () => {
   return (
-    <div id={predictor_form_div}>
+    <div id={predictor_form_div} 
+        style={{
+            position: 'absolute', left: '50%', top: '50%',
+            transform: 'translate(-50%, -50%)'
+        }}
+    >
+      <center><h1>Preditor</h1></center>
       <p>Idade: <input type="number" id={predictor_form_idade}/> </p> 
       <p>Asma: <input type="number" id={predictor_form_asma}/> </p> 
       <p>Cardiopatia: <input type="number" id={predictor_form_cardiopatia}/> </p> 
@@ -45,7 +51,7 @@ export const PredictorForm = () => {
           <option value="masculino">Masculino</option>               
       </select></p>
 
-      <p><button id={predictor_button} onClick={make_prediction}>Realizar predição</button></p>
+      <center><p><button id={predictor_button} onClick={make_prediction} style={{height: '60px', width : '150px'}}>Realizar predição</button></p></center>
     </div>
   );
 };
