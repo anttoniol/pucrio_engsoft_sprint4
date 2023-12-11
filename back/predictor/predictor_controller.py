@@ -17,12 +17,6 @@ predictor_tag = Tag(name ="prediction", description = "Some prediction")
 
 predictor_service = PredictorService()
 
-def format_objects(objects):
-    formatted_objects = list()
-    for object in objects:
-        formatted_objects.append(object.__dict__())
-    return formatted_objects
-
 def create_response(body, status_code):
     return flask.Response(status = status_code, response = json.dumps(body), mimetype = "application/json", content_type = "application/json")
 

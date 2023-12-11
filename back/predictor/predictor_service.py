@@ -1,38 +1,43 @@
-from back.predictor.predictor_model_loader import PredictorModelLoader
+import os
 
+from back.loader import Loader
 
+dir = os.path.dirname(__file__)
+
+# Serviço para a obtenção da predição de óbito
 class PredictorService:
-    predictor_model_loader = PredictorModelLoader('../../classificador.pkl')
-    def predict(self, json_request):
-        idade = json_request["idade"]
-        asma = json_request["asma"]
-        cardiopatia = json_request["cardiopatia"]
-        diabetes = json_request["diabetes"]
-        doenca_hematologica = json_request["doenca_hematologica"]
-        doenca_hepatica = json_request["doenca_hepatica"]
-        doenca_neurologica = json_request["doenca_neurologica"]
-        doenca_renal = json_request["doenca_renal"]
-        imunodepressao = json_request["imunodepressao"]
-        obesidade = json_request["obesidade"]
-        pneumopatia = json_request["pneumopatia"]
-        puerpera = json_request["puerpera"]
-        sindrome_de_down = json_request["sindrome_de_down"]
-        eh_racacor_amarela = json_request["eh_racacor_amarela"]
-        eh_racacor_branca = json_request["eh_racacor_branca"]
-        eh_racacor_desconhecida = json_request["eh_racacor_desconhecida"]
-        eh_racacor_ignorada = json_request["eh_racacor_ignorada"]
-        eh_racacor_indigena = json_request["eh_racacor_indigena"]
-        eh_racacor_nenhuma = json_request["eh_racacor_nenhuma"]
-        eh_racacor_parda = json_request["eh_racacor_parda"]
-        eh_racacor_preta = json_request["eh_racacor_preta"]
-        eh_covid_confirmado = json_request["eh_covid_confirmado"]
-        eh_sexo_feminino = json_request["eh_sexo_feminino"]
-        eh_sexo_indefinido = json_request["eh_sexo_indefinido"]
-        eh_sexo_masculino = json_request["eh_sexo_masculino"]
+    __pfl_file_path = os.path.join(dir, '..', '..', 'classificador.pkl')
+    __model = Loader().load_model("Logistic Regression", __pfl_file_path)
+    def predict(self, data):
+        idade = data["idade"]
+        asma = data["asma"]
+        cardiopatia = data["cardiopatia"]
+        diabetes = data["diabetes"]
+        doenca_hematologica = data["doenca_hematologica"]
+        doenca_hepatica = data["doenca_hepatica"]
+        doenca_neurologica = data["doenca_neurologica"]
+        doenca_renal = data["doenca_renal"]
+        imunodepressao = data["imunodepressao"]
+        obesidade = data["obesidade"]
+        pneumopatia = data["pneumopatia"]
+        puerpera = data["puerpera"]
+        sindrome_de_down = data["sindrome_de_down"]
+        eh_racacor_amarela = data["eh_racacor_amarela"]
+        eh_racacor_branca = data["eh_racacor_branca"]
+        eh_racacor_desconhecida = data["eh_racacor_desconhecida"]
+        eh_racacor_ignorada = data["eh_racacor_ignorada"]
+        eh_racacor_indigena = data["eh_racacor_indigena"]
+        eh_racacor_nenhuma = data["eh_racacor_nenhuma"]
+        eh_racacor_parda = data["eh_racacor_parda"]
+        eh_racacor_preta = data["eh_racacor_preta"]
+        eh_covid_confirmado = data["eh_covid_confirmado"]
+        eh_sexo_feminino = data["eh_sexo_feminino"]
+        eh_sexo_indefinido = data["eh_sexo_indefinido"]
+        eh_sexo_masculino = data["eh_sexo_masculino"]
 
-        inputs = [idade, asma, cardiopatia, diabetes, doenca_hematologica, doenca_hepatica, doenca_neurologica,
+        input = [idade, asma, cardiopatia, diabetes, doenca_hematologica, doenca_hepatica, doenca_neurologica,
                   doenca_renal, imunodepressao, obesidade, pneumopatia, puerpera, sindrome_de_down, eh_racacor_amarela,
                   eh_racacor_branca, eh_racacor_desconhecida, eh_racacor_ignorada, eh_racacor_indigena, eh_racacor_nenhuma,
                   eh_racacor_parda, eh_racacor_preta, eh_covid_confirmado, eh_sexo_feminino, eh_sexo_indefinido, eh_sexo_masculino]
 
-        return self.predictor_model_loader.get_model().predict([inputs]).tolist()
+        return self.__model.get_content().predict([input]).tolist()
